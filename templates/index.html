@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block body %}
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2500">
+        <img src="/static/images/3.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome, To SocialDotReal</h5>
+            <p>We identify FakeAccounts!!</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="/static/images/1.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome, To SocialDotReal</h5>
+            <p>We identify FakeAccounts!!</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="/static/images/4.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome, To SocialDotReal</h5>
+            <p>We identify FakeAccounts!!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- How it works -->
+<div class="container marketing">
+    <h1 class="text-dark mt-5" style="text-align:center; font-size: 3.25rem;font-weight: 500;">How it works</h1>
+    <hr class="featurette-divider my-5">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading text-primary">Step 1. <span class="text-primary">Enter data into the form</span></h2>
+            <p class="text-dark" style="font-size: 1.25rem;font-weight: 500;">Click on detector tab in navbar. Enter the data of the account that you want to detect.</p>
+        </div>
+        <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                focusable="false" role="img" aria-label="Placeholder: 500x500">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                    dy=".3em">500x500</text>
+            </svg>
+        </div>
+    </div>
+    <hr class="featurette-divider my-5">
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <!-- <h2 class="featurette-heading">Step 2. <span class="text-muted">Select the detection algorithm.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                tellus ac cursus commodo.</p> -->
+            <h2 class="featurette-heading text-warning">Step 2. <span class="text-warning">Select the detection algorithm.</span></h2>
+            <p class="text-dark" style="font-size: 1.25rem;font-weight: 500;" >We have three different algorithms</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                focusable="false" role="img" aria-label="Placeholder: 500x500">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                    dy=".3em">500x500</text>
+            </svg>
+        </div>
+    </div>
+    <hr class="featurette-divider my-5">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading text-success">Step 3. <span class="text-success">View Graph.</span></h2>
+            <p class="text-dark"style="font-size: 1.25rem;font-weight: 500;" >Check the visual representation using graph tab.</p>
+        </div>
+        <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                focusable="false" role="img" aria-label="Placeholder: 500x500">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                    dy=".3em">500x500</text>
+            </svg>
+        </div>
+    </div>
+</div>
+<footer class="container my-4">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2021-2022 SocialDotReal, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+{% endblock body %}
+

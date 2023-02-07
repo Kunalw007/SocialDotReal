@@ -3,14 +3,17 @@
 {% block title %}
 Detector
 {% endblock title %}
-
+{% block styles %}
+<link rel="stylesheet" href="static/css/style.css">
+{% endblock styles %}
 {% block cdn %}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+
 {% endblock cdn %}
 
 
 {% block body %}
-<section class="hero is-dark is-large">
+<!-- <section class="hero is-dark is-large">
     <div class="hero-body">
       <div class="container has-text-centered">
         <p class="title">
@@ -57,5 +60,39 @@ Detector
         </div>
       </nav>
     </div>
-  </section>
+  </section> -->
+  <body>
+    <div class="content">
+      
+      <div class="container">
+        <div class="row align-items-stretch no-gutters contact-wrap">
+          <div class="col-md-12">
+            <div class="form h-100">
+              <h3>Enter account name to check</h3>
+              <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                <div class="row">
+                  <div class="col-md-6 form-group mb-4 mt-5">
+                    <div class="input-group flex-nowrap start-50">
+                      <span class="input-group-text" id="addon-wrapping">@</span>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3"></div>
+                  <div class="col-7">
+                    <input type="submit" value="Check Account" class="btn btn-primary rounded-0 py-2 px-4 mt-4" style="margin-left: -12px;">
+                  <span class="submitting"></span> 
+                  </div>
+                </div>
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    </body>
 {% endblock body %}

@@ -1,0 +1,174 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Result
+{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+
+<style>
+</style>
+{% endblock styles %}
+
+<!-- {% block script %} <script src="{% static 'main.js' %}" defer></script> {% endblock script %} -->
+
+
+
+
+{% block body %}
+
+<body>
+    <!-- <div class="position-relative position-absolute top-50 start-50 translate-middle">
+        <div class="spinner-border " style="width: 3rem; height: 3rem;" role="status">
+         
+        </div>
+      </div> -->
+
+<!-- <h2 class="fs-3" style="margin-top: 3em;">Instagram Profile fake detection for {{ result0 }} {{ result1 }}</h2> -->
+
+<div class="container1">
+  <!-- {{ profile_pic }} -->
+  <section class="top-bar">
+    <button class="top-bar__back-btn"><i class="material-icons">  </i></button>
+    <div class="top-bar__title">
+      <h1 class="top-bar__title__text">{{ username }}</h1>
+      <img class='top-bar__title__verified-icon' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/kisspng-social-media-instagram-verified-badge-symbol-compu-5b1eedb5aba638.1612204615287535897031.jpg" alt="verified-icon">
+    </div>
+    <button class="top-bar__menu-btn"><i class="material-icons"> </i></button>
+  </section>
+  <section class="stats">
+    <div class="stats__img-holder" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/instagram-logo.png');">
+    </div>
+    <div class="stats__data">
+      <div class="stats__data__point">
+        <div class="stats__data__point__value">{{ post }}</div>
+        <div class="stats__data__point__description">Posts</div>
+      </div>
+      <div class="stats__data__point">
+        <div class="stats__data__point__value">{{ Follower }}</div>
+        <div class="stats__data__point__description">Followers</div>
+      </div>
+      <div class="stats__data__point">
+        <div class="stats__data__point__value">{{ following }}</div>
+        <div class="stats__data__point__description">Following</div>
+      </div>
+    </div>
+  </section>
+  <section class="description">
+    <h2 class="decription__title">{{ name }}</h2>
+    <p>
+     {{ bio }}
+    </p>
+    {% if url != None %}
+        <a href={{ url }}>{{ url }}</a>
+    {% else %}
+        <p></p>
+    {% endif %}
+  </section>
+  <section class="actions">
+    <button class="actions__btn actions__btn--active">Follow</button>
+    <button class="actions__btn">Message</button>
+  </section>
+  <section class="stories">
+    <div class="stories__single">
+      <div class="stories__single__img-holder">
+        <div class="stories__single__img-holder__inner" style="background-image: url('https://images.unsplash.com/photo-1431512284068-4c4002298068?ixlib=rb-1.2.1&dpr=1&auto=format&fit=crop&w=416&h=312&q=60');"></div>
+      </div>
+      <p class="stories__single__description">Game On</p>
+    </div>
+    <div class="stories__single">
+      <div class="stories__single__img-holder">
+        <div class="stories__single__img-holder__inner" style="background-image: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></div>
+      </div>
+      <p class="stories__single__description">Take a Stand</p>
+    </div>
+    <div class="stories__single">
+      <div class="stories__single__img-holder">
+        <div class="stories__single__img-holder__inner" style="background-image: url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></div>
+      </div>
+      <p class="stories__single__description">You got this</p>
+    </div>
+    <div class="stories__single">
+      <div class="stories__single__img-holder">
+        <div class="stories__single__img-holder__inner" style="background-image: url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></div>
+      </div>
+      <p class="stories__single__description">#skater girl</p>
+    </div>
+    <div class="stories__single">
+      <div class="stories__single__img-holder">
+        <div class="stories__single__img-holder__inner" style="background-image: url('https://images.unsplash.com/photo-1474524955719-b9f87c50ce47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></div>
+      </div>
+      <p class="stories__single__description">Game On</p>
+    </div>
+    <div class="stories__single">
+      <div class="stories__single__img-holder">
+        <div class="stories__single__img-holder__inner" style="background-image: url('https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></div>
+      </div>
+      <p class="stories__single__description">Take a Stand</p>
+    </div>
+    <div class="stories__single">
+      <div class="stories__single__img-holder">
+        <div class="stories__single__img-holder__inner" style="background-image: url('https://images.unsplash.com/photo-1508873881324-c92a3fc536ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></div>
+      </div>
+      <p class="stories__single__description">You got this</p>
+    </div>
+    <div class="stories__single">
+      <div class="stories__single__img-holder">
+        <div class="stories__single__img-holder__inner" style="background-image: url('https://images.unsplash.com/photo-1518144591331-17a5dd71c477?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></div>
+      </div>
+      <p class="stories__single__description">#skater girl</p>
+    </div>
+  </section>
+  <section class="tabs">
+    <button class="tabs__btn tabs__btn--active">
+      <img class='tabs__btn__icon' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/grid-icon.png" alt="grid icon">
+    </button>
+    <button class="tabs__btn">
+      <img class='tabs__btn__icon' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/igtv-icon.png" alt="igtv icon">
+    </button>
+    <button class="tabs__btn">
+      <img class='tabs__btn__icon' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/smile-icon.png" alt="smile icon">
+    </button>
+    <button class="tabs__btn">
+      <img class='tabs__btn__icon' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/tagged-icon.png" alt="tagged icon">
+    </button>
+  </section>
+  <div class="contain">
+    <div class="section1">
+  <section class="grid">
+    <a href="" class="grid__photo" style="background-image: url('https://images.unsplash.com/photo-1548032885-b5e38734688a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></a>
+    <a href="" class="grid__photo" style="background-image: url('https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></a>
+    <a href="" class="grid__photo" style="background-image: url('https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></a>
+    <a href="" class="grid__photo" style="background-image: url('https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></a>
+    <a href="" class="grid__photo" style="background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></a>
+    <a href="" class="grid__photo" style="background-image: url('https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"></a>
+  </section>
+</div>
+
+{% if result < 0.5 %}
+    <img src="{% static 'Images/real1.png' %}" usemap="#Map" class="img2">
+{% else %}
+    <img src="{% static 'Images/unreal1.png' %}" usemap="#Map" class="img2">
+{% endif %}
+</div>
+  <section class="bottom-bar">
+    <button class="bottom-bar__btn">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/home-icon.png" class="bottom-bar__btn__icon" alt="home icon">
+    </button>
+    <button class="bottom-bar__btn bottom-bar__btn--active">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/search-icon.png" class="bottom-bar__btn__icon" alt="search icon">
+    </button>
+    <button class="bottom-bar__btn">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/add-icon.png" class="bottom-bar__btn__icon" alt="add icon">
+    </button>
+    <button class="bottom-bar__btn">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/heart-icon.png" class="bottom-bar__btn__icon" alt="heart icon">
+    </button>
+    <button class="bottom-bar__btn">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/profile-picture.png" class="bottom-bar__btn__icon" alt="profile picture">
+    </button>
+  </section>
+</div>
+</body>
+{% endblock body %}

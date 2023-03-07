@@ -8,4 +8,5 @@ urlpatterns = [
    path("about",views.about,name="about"),
    path("detector",views.detector,name="detector"),
     path("contactus",views.contactus,name="contactus"),
+    path("result/<str:username>/",views.result,name="result"),
 ]

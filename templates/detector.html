@@ -97,11 +97,18 @@ Detector
     </body> -->
 <!-- {{ datavalue }} -->
 <body>
+  {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
   <div class="content mx-5">
     
     <form class="align-items-center mx-5" method="post">
       {% csrf_token %}
-      <div class=" card  align-items-stretch mx-5" >
+      <div class=" card align-items-stretch mx-5" >
         <h4 class="card-header px-5 font-monospace">Enter Instagram Username</h4>
         <div class="card-body px-5 py-4">
         <div class="col-auto">

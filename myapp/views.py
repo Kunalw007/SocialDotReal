@@ -29,8 +29,9 @@ def result(request, username):
     try:
         profile = instaloader.Profile.from_username(L.context, username)
     except:
-        messages="ID not found"
+        # messages="ID not found"
         print("An exception occurred")
+        messages.success(request, 'The Instagram ID entered is invalid. Please check your input and try again.')
         return redirect("detector")
     # posts_data = []
     media = profile.mediacount
